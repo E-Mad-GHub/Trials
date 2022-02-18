@@ -1,18 +1,22 @@
 #include <iostream>
 
-
+// Constructor
 template <typename T>
 Forward_List<T>::Forward_List(): startPtr(nullptr), endPtr(nullptr)
 {
 
 }
 
+// Destructor
 template <typename T>
 Forward_List<T>::~Forward_List()
 {
     this->clear();
 }
 
+// Pushes new data to the front of the list
+// T is the list data type
+// ARG_TYPE is to delegate the overload of the API to the node overload APIs
 template <typename T>
 template <typename ARG_TYPE>
 void Forward_List<T>::push_front(ARG_TYPE value)
@@ -35,6 +39,7 @@ void Forward_List<T>::push_front(ARG_TYPE value)
     }
 }
 
+// removes the front data of the list
 template <typename T>
 void Forward_List<T>::pop_front()
 {
@@ -64,6 +69,7 @@ void Forward_List<T>::pop_front()
     }
 }
 
+// Clears the list
 template <typename T>
 void Forward_List<T>::clear() noexcept
 {
@@ -80,6 +86,7 @@ void Forward_List<T>::clear() noexcept
     }
 }
 
+// Checks whether the list is empty or not
 template <typename T>
 bool Forward_List<T>::empty() const noexcept
 {
@@ -93,6 +100,7 @@ bool Forward_List<T>::empty() const noexcept
     return returnVal;
 }
 
+// Returns a pointer to the begining node
 template <typename T>
 T* Forward_List<T>::begin() noexcept
 {   
@@ -106,6 +114,7 @@ T* Forward_List<T>::begin() noexcept
     return returnPtr;
 }
 
+// Returns a pointer to the last node
 template <typename T>
 T* Forward_List<T>::end() noexcept
 {
