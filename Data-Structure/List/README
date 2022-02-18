@@ -1,0 +1,27 @@
+Folder structure:
+
+List/
+├── build			// Build Directory (Where the outputs should be).
+├── inc				// All header files (each class with its own file).
+│   ├── FList			// Forward-List class.
+│   │   └── FList.hpp		// Forward-List class header file.
+│   └── FNode			// Forward-List Node class.
+│       └── FNode.hpp		// Forward-List Node header file.
+├── README			// this pointer to this README file :D.
+├── src				// All source files (each class with its own file).
+│   ├── FList			// Forward-List class.
+│   │   └── FList.cpp		// Forward-List class source file.
+│   └── FNode			// Forward-List Node class.
+│       └── FNode.cpp		// Forward-List Node source file.
+├── test			// Test applications that uses the above implementation.
+│   └── main.cpp		// Test application source code.
+└── tools			// Tools that can be useful to build the implementation.
+    └── CMakeLists.txt		// A recursive simple CMake configured to compile the test application.
+
+---------------------------------
+
+To build:
+- Go to build directory, run '$ cmake ./../tools/ && make' (This will compile the source code and generate a binary called "Forward-List_Test").
+
+To run:
+- Go to build directory, run '$ ./Forward-List_Test'.
