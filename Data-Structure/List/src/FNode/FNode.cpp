@@ -1,4 +1,3 @@
-#include <iostream>
 
 // Constructor
 template <typename DATA_TYPE>

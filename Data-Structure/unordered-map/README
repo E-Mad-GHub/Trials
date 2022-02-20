@@ -1,0 +1,9 @@
+Folder structure:
+
+---------------------------------
+
+To build:
+- Go to build directory, run '$ cmake ./../tools/ && make' (This will compile the source code and generate a binary called "Umap_Test").
+
+To run:
+- Go to build directory, run '$ ./Umap_Test'.
